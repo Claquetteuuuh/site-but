@@ -26,8 +26,12 @@ section.command {
 }
 
 .menu-img-container img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     height: 450px;
+    width: auto;
     display: none;
+    border-radius: 30px;
 }
 
 input[type="radio"] {
@@ -51,6 +55,7 @@ input[type="radio"] {
 }
 
 
+
 #switch1:checked~div.menu-img-container .img1 {
     display: block;
 }
@@ -64,15 +69,15 @@ input[type="radio"] {
 }
 
 #switch1:checked~div.label-container label[for="switch1"] {
-    filter: brightness(.6);
+    filter: brightness(.4);
 }
 
 #switch2:checked~div.label-container label[for="switch2"] {
-    filter: brightness(.6);
+    filter: brightness(.4);
 }
 
 #switch3:checked~div.label-container label[for="switch3"] {
-    filter: brightness(.6);
+    filter: brightness(.4);
 }
 
 
@@ -86,11 +91,22 @@ input[type="radio"] {
 .label-container label {
     margin: 0 10px;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.label-container label:hover{
+    filter: brightness(.6);
 }
 
 label img {
     height: 120px;
     border-radius: 20px;
+}
+
+.label-container label img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 form {
@@ -228,6 +244,11 @@ form input[type="submit"] {
     color: white;
     font-size: 20px;
     cursor: pointer;
+    transition: all .3s;
+}
+
+form input[type="submit"]:hover{
+    
 }
 
 .nocb {
@@ -342,33 +363,34 @@ form input[type="submit"] {
 
     .menu-img-container img {
         width: 100%;
-        height: auto;
-
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
     }
 
     .label-container label {
         width: calc(100%/3);
     }
 
-    .label-container label img {
-        width: 100%;
-        height: auto;
-    }
-    .other-menu{
+
+    .other-menu {
         padding-top: 150px;
         min-height: 100vh;
     }
-    .other-menu > div{
+
+    .other-menu>div {
         width: 100%;
     }
-    .other-menu > div > div{
+
+    .other-menu>div>div {
         align-items: center;
         flex-direction: column;
     }
-    .card > img{
+
+    .card>img {
         margin: 20px 0;
     }
-    .card{
+
+    .card {
         width: clamp(200px, 70%, 350px);
     }
 }
