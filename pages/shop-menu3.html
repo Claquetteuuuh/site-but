@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>DK | Menu 1</title>
+    <title>DK | Menu Pigeon</title>
+    <link rel="shortcut icon" href="../assets/logo/logo-rond.png" type="image/png">
     <link rel="stylesheet" href="../src/global.css">
     <link rel="stylesheet" href="../src/header.css">
     <link rel="stylesheet" href="../src/footer.css">
@@ -26,14 +26,14 @@
                     <div></div>
                     <div></div>
                     <div class="burger-content">
-                        <a class="nav-active" href="../pages/menu.html">Menu</a>
+                        <a class="nav-active" href="#menus">Menu</a>
                         <a href="../pages/info.html">Information</a>
-                        <a href="../pages/fidelity.html">Fidélité</a>
+                        <a href="../pages/horaires.html">Horaires</a>
                     </div>
                 </li>
-                <li class="nav-active"><a href="../pages/menu.html">Menu</a></li>
+                <li class="nav-active"><a href="#menus">Menu</a></li>
                 <li><a href="../pages/info.html">Information</a></li>
-                <li><a href="../pages/fidelity.html">Fidélité</a></li>
+                <li><a href="../pages/horaires.html">Horaires</a></li>
             </ul>
             <a href="../pages/menu.html"><img src="../assets/svg/caddie.svg" alt="caddie pour commander"></a>
         </nav>
@@ -46,29 +46,28 @@
 
             <div class="menu-img-container">
                 <div class="light"></div>
-                <img class="img1 img" src="../assets/img/kebab-menu3.png" alt="Hand holding a kebab">
-                <img class="img2 img" src="../assets/img/kebab-img1.png"
-                alt="Kebab with many thing in">
-                <img class="img3 img" src="../assets/img/kebab-menu2.png" alt="Hand holding a kebab">
+                <img class="img1 img" src="../assets/img/kebab-menu3.png" alt="pigeon flying with a kebab on his back">
+                <img class="img2 img" src="../assets/img/mojito.jpg" alt="mojito with ice">
+                <img class="img3 img" src="../assets/img/fries.jpg" alt="fries with fork">
             </div>
-            
+
             <div class="label-container">
                 <label for="switch1">
                     <img src="../assets/img/kebab-menu3.png" alt="pigeon flying with a kebab on his back">
-                    
+
                 </label>
                 <label for="switch2">
-                    <img src="../assets/img/kebab-img1.png" alt="Kebab with many thing in">
+                    <img src="../assets/img/mojito.jpg" alt="mojito with ice">
 
                 </label>
                 <label for="switch3">
-                    <img src="../assets/img/kebab-img1.png" alt="Kebab with many thing in">
+                    <img src="../assets/img/fries.jpg" alt="fries with fork">
                 </label>
             </div>
         </div>
         <form action="">
             <h1>Menu "Pigeon lvl 2" 15<span>€</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit.</p>
+            <p>Envie d'une livraison un peu particulière ? Le menu Pigeon est fait pour toi</p>
             <div class="checkbox-container">
                 <div>
                     <h2>Ingrédient</h2>
@@ -107,14 +106,14 @@
                         <label class="neumorphism" for="bacon">
                             <div></div>
                         </label>
-                        <label for="bacon">Bacon</label>
+                        <label for="bacon">Bacon + 1.5€</label>
                     </div>
                     <div>
                         <input type="checkbox" name="cheddar" id="cheddar">
                         <label class="neumorphism" for="cheddar">
                             <div></div>
                         </label>
-                        <label for="cheddar">Cheddar</label>
+                        <label for="cheddar">Cheddar + 1.5€</label>
                     </div>
                 </div>
                 <div>
@@ -122,49 +121,49 @@
                         <span>S</span>auce
                     </h2>
                     <div>
-                        <input type="checkbox" name="ketchup" id="ketchup">
+                        <input type="radio" name="sauce" id="ketchup">
                         <label class="neumorphism" for="ketchup">
                             <div></div>
                         </label>
                         <label for="ketchup">Ketchup</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="algerienne" id="algerienne">
+                        <input type="radio" name="sauce" id="algerienne">
                         <label class="neumorphism" for="algerienne">
                             <div></div>
                         </label>
                         <label for="algerienne">Algerienne</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="biggi" id="biggi">
+                        <input type="radio" name="sauce" id="biggi">
                         <label class="neumorphism" for="biggi">
                             <div></div>
                         </label>
                         <label for="biggi">Biggi</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="mayonnaise" id="mayonnaise">
+                        <input type="radio" name="sauce" id="mayonnaise">
                         <label class="neumorphism" for="mayonnaise">
                             <div></div>
                         </label>
                         <label for="mayonnaise">Maness</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="bbq" id="bbq">
+                        <input type="radio" name="sauce" id="bbq">
                         <label class="neumorphism" for="bbq">
                             <div></div>
                         </label>
                         <label for="bbq">BBQ</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="blanche" id="blanche">
+                        <input type="radio" name="sauce" id="blanche">
                         <label class="neumorphism" for="blanche">
                             <div></div>
                         </label>
                         <label for="blanche">Blanche</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="samourai" id="samourai">
+                        <input type="radio" name="sauce" id="samourai">
                         <label class="neumorphism" for="samourai">
                             <div></div>
                         </label>
@@ -174,63 +173,63 @@
                 <div>
                     <h2>Boi<span>ss</span>on</h2>
                     <div>
-                        <input type="checkbox" name="fuze-tea" id="fuze-tea">
+                        <input type="radio" name="boisson" id="fuze-tea">
                         <label class="neumorphism" for="fuze-tea">
                             <div></div>
                         </label>
                         <label for="fuze-tea">Fuze tea</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="oasis" id="oasis">
+                        <input type="radio" name="boisson" id="oasis">
                         <label class="neumorphism" for="oasis">
                             <div></div>
                         </label>
                         <label for="oasis">Wazisse</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="coca-cola" id="coca-cola">
+                        <input type="radio" name="boisson" id="coca-cola">
                         <label class="neumorphism" for="coca-cola">
                             <div></div>
                         </label>
                         <label for="coca-cola">Cola</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="pepsi" id="pepsi">
+                        <input type="radio" name="boisson" id="pepsi">
                         <label class="neumorphism" for="pepsi">
                             <div></div>
                         </label>
                         <label for="pepsi">Pespi</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="hawai" id="hawai">
+                        <input type="radio" name="boisson" id="hawai">
                         <label class="neumorphism" for="hawai">
                             <div></div>
                         </label>
                         <label for="hawai">Hawai</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="orangina" id="orangina">
+                        <input type="radio" name="boisson" id="orangina">
                         <label class="neumorphism" for="orangina">
                             <div></div>
                         </label>
                         <label for="orangina">Orangina</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="green-tea" id="green-tea">
-                        <label class="neumorphism" for="green-tea">
+                        <input type="radio" name="boisson" id="mojito">
+                        <label class="neumorphism" for="mojito">
                             <div></div>
                         </label>
-                        <label for="green-tea">Green tea</label>
+                        <label for="mojito">Mojito + 1.5€</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="fanta" id="fanta">
+                        <input type="radio" name="boisson" id="fanta">
                         <label class="neumorphism" for="fanta">
                             <div></div>
                         </label>
                         <label for="fanta">Fanta Exotique</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="perrier" id="perrier">
+                        <input type="radio" name="boisson" id="perrier">
                         <label class="neumorphism" for="perrier">
                             <div></div>
                         </label>
@@ -259,11 +258,11 @@
                 </div>
             </div>
             <input type="submit" value="Commander">
-            <p class="nocb">Le payement se passe avec le livreur</p>
+            <p class="nocb">Glisser le billet dans l'aile du pigeon</p>
         </form>
     </section>
 
-    <section class="other-menu">
+    <section id="menus" class="other-menu">
         <div>
             <h2>Voir les menus</h2>
             <div>
@@ -297,7 +296,10 @@
 
                 </div>
             </div>
-            <img src="../assets/logo/crous.png" alt="logo du crous">
+            <div>
+                <img src="../assets/logo/crous.png" alt="logo du crous">
+
+            </div>
         </div>
         <div class="footer-trait"></div>
     </footer>

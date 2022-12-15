@@ -25,11 +25,39 @@ header nav ul{
 
 header nav ul a{
     color: white;
+    transition: .3s all;
+    position: relative;
 }
+header nav ul a::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 25px;
+    border-radius: 100px;
+    background-color: white;
+    top: 100%;
+    transition: all .3s;
+}
+header nav ul a:hover::before{
+    width: 100%;
+}
+
 
 .nav-active a, .nav-active{
     color: #E10512;
+    font-weight: bold;
 }
+.nav-active a::before, .nav-active::before{
+    background-color: #E10512;
+}
+
+nav > a img{
+    transition: all .3s;
+}
+nav > a img:hover{
+    scale: 1.15;
+}
+
 
 .burger div:not(.burger-content){
     height: 5px;

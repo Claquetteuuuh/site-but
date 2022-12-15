@@ -7,8 +7,9 @@ section.command {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-image: url("../assets/img/broche-kebab-background.png");
-
 }
+
+
 
 .container {
     margin-top: 160px;
@@ -145,7 +146,7 @@ form p {
 .checkbox-container {
     display: flex;
     margin-top: 10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: 'montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -247,10 +248,6 @@ form input[type="submit"] {
     transition: all .3s;
 }
 
-form input[type="submit"]:hover{
-    
-}
-
 .nocb {
     margin-top: 10px;
     font-size: 10px;
@@ -310,10 +307,26 @@ form input[type="submit"]:hover{
 }
 
 .other-menu h2 {
+    position: relative;
+    margin: 40px 0;
     font-family: 'montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 1px;
     font-weight: 400;
     text-align: center;
+}
+.other-menu h2::before{
+    border-radius: 100px;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 30%;
+    background-color: white;
+    top: 100%;
+    transition: all .3s;
+}
+
+.other-menu h2:hover::before{
+    width: 100%;
 }
 
 .other-menu>div {
