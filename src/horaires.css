@@ -36,10 +36,11 @@ table tr td:nth-child(1) {
     text-transform: uppercase;
 }
 
-.pc{
+.pc {
     display: table;
 }
-.mobile{
+
+.mobile {
     display: none;
     font-size: clamp(12px, 3vw, 15px);
     width: 90%;
@@ -50,13 +51,16 @@ table tr td:nth-child(1) {
     z-index: -1;
     background: transparent;
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: calc(30vw / 4);
-    filter: blur(160px);
+    filter: blur(150px);
 }
 
 .light1 {
+    left: 100%;
+    top: calc(10%  );
+    transform: translate(-50%, -0%);
 
     animation: moveLight 8s infinite forwards ease;
     background-color: #E10512;
@@ -64,26 +68,39 @@ table tr td:nth-child(1) {
 }
 
 .light2 {
+    left: 0;
+    right: 100%;
+    top: calc(50%);
+    transform: translate(50%, -0%);
     animation: moveLight 8s 2s infinite forwards ease;
     background-color: #E10512;
 }
 
 .light3 {
+    left: 0;
+    right: 100%;
+    top: calc(10%);
+    transform: translate(50%, -0%);
     animation: moveLight 8s 4s infinite forwards ease;
     background-color: #008000;
 }
 
 .light4 {
+    right: 0;
+    left: 100%;
+    top: calc(50%);
+    transform: translate(-50%, -0%);
     animation: moveLight 8s 6s infinite forwards ease;
     background-color: #008000;
 }
 
 
 @keyframes float {
-    from{
-        scale: 1;  
+    from {
+        scale: 1;
     }
-    to{
+
+    to {
         scale: 1.03;
     }
 }
@@ -93,44 +110,46 @@ table tr td:nth-child(1) {
     0% {
         right: 0;
         left: 100%;
-        top: calc(10% + 100px);
+        top: calc(10%  );
         transform: translate(-50%, -0%);
     }
 
     25% {
         left: 0;
         right: 100%;
-        top: calc(50% + 100px);
+        top: calc(50%  );
         transform: translate(50%, -0%);
     }
 
     50% {
         left: 0;
         right: 100%;
-        top: calc(10% + 100px);
+        top: calc(10%  );
         transform: translate(50%, -0%);
     }
 
     75% {
         right: 0;
         left: 100%;
-        top: calc(50% + 100px);
+        top: calc(50%  );
         transform: translate(-50%, -0%);
     }
-    100%{
+
+    100% {
         right: 0;
         left: 100%;
-        top: calc(10% + 100px);
+        top: calc(10%  );
         transform: translate(-50%, -0%);
     }
 }
 
 
 @media screen and (max-width:750px) {
-    .pc{
+    .pc {
         display: none;
     }
-    .mobile{
+
+    .mobile {
         display: table;
     }
 }
